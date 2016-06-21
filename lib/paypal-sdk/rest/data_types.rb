@@ -10,7 +10,7 @@ module PayPal::SDK
     module DataTypes
       class Base < Core::API::DataTypes::Base
         attr_accessor :error
-        attr_writer   :header, :request_id
+        attr_writer   :header, :request_id, :billing_plan_units
 
         def header
           @header ||= {}
